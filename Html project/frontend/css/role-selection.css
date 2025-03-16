@@ -1,0 +1,84 @@
+
+.role-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets/background.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.role-box {
+    text-align: center;
+    padding: 20px 30px;
+    background: #2c2f33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.role-box h2 {
+    margin-bottom: 20px;
+    color: #00d084;
+}
+
+.role-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.role-button {
+    text-decoration: none;
+    background: #00d084;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.role-button:hover {
+    background: #00b36b;
+}
+
+/* Registration Box */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1e;
+    color: #fff;
+}
+
+.registration-box {
+    background: #2c2f33;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registration-box h2 {
+    margin-bottom: 20px;
+    color: #00d084;
+}
+
+.register-button {
+    background: #00d084;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-button:hover {
+    background: #00b36b;
+}

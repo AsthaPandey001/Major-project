@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/background.png') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container, .role-container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.input-group input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+.input-group input[type="file"]::-webkit-file-upload-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-group input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #218838;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.role-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.role-button {
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.role-button:hover {
+    background: #0056b3;
+}
+.register-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    width: fit-content; /* Set button width to fit its content */
+}
+
+.register-button:hover {
+    background-color: #218838;
+}

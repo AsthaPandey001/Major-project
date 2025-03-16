@@ -1,0 +1,159 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+.navbar .logo img {
+    height: 100px;
+    width: 45p;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    padding: 5px 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar .nav-links a:hover, .navbar .nav-links a.active {
+    color: #ffcc00;
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../assets/background.png') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-left, .contact-right {
+    width: 48%;
+}
+
+.contact-left h2, .contact-right h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-left p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info li img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

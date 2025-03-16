@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="stu-dashboard.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 id="welcomeText">Welcome, Student</h2>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#my-exams">My Exams</a></li>
+            <li><a href="#my-results">My Results</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+            <script>
+                function logout() {
+                    localStorage.removeItem("studentName");
+                    window.location.href = "login.html";
+                }
+             </script>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Profile</h2>
+        <p><strong>Name:</strong> <span id="studentName"></span></p>
+        <p><strong>Enrollment No.:</strong> 123456789</p>
+        <p><strong>Programme:</strong> B.Tech</p>
+        <p><strong>Course:</strong> Computer Science</p>
+        <p><strong>Year:</strong> 3rd</p>
+        <p><strong>Semester:</strong> 6th</p>
+    </section>
+
+    <!-- My Exams Section -->
+    <section id="my-exams">
+        <h2>My Exams</h2>
+        <table>
+            <tr>
+                <th>Exam Name</th>
+                <th>Duration</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Python Programming</td>
+                <td>60 Minutes</td>
+                <td><button onclick="captureImage()">Start Test</button></td>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>45 Minutes</td>
+                <td><button onclick="captureImage()">Start Test</button></td>
+            </tr>
+        </table>
+        <video id="video" width="320" height="240" autoplay></video>
+        
+        <canvas id="canvas" style="display:none;"></canvas>
+    </section>
+
+    <!-- My Results Section -->
+    <section id="my-results">
+        <h2>My Results</h2>
+        <table>
+            <tr>
+                <th>Exam Name</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Python Programming</td>
+                <td>24/30</td>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>18/25</td>
+            </tr>
+        </table>
+    </section>
+
+    
+
+</body>
+</html>

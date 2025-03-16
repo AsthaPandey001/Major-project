@@ -1,0 +1,145 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/background.png') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login Box */
+.login-box {
+    background: #2c2f33;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo */
+.logo img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #00d084;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+p a {
+    color: #00d084;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #3c3f43;
+    color: #fff;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #00d084;
+    box-shadow: 0 0 5px rgba(0, 208, 132, 0.5);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #00d084;
+    text-decoration: none;
+    text-align: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+    background: #00d084;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background: #00b36b;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 14px;
+    }
+}
